@@ -65,3 +65,24 @@ for (let i = 0; i < navLink.length; i++) {
     activePage(i);
   });
 }
+
+// !PRODUCTS FILTER BUTTON MOBILE
+const filterBtnMbl = document.querySelector(".filter-btn-mbl");
+const filterBtnTitle = document.querySelector(".filter-btn-title");
+const filterArrowIcon = document.querySelector(".bx-chevron-down");
+const filterList = document.querySelector(".filter-list");
+const filterItem = document.querySelectorAll(".filter-item");
+const filterItemTitle = document.querySelectorAll(".filter-item-title");
+
+filterBtnMbl.addEventListener("click", function () {
+  filterArrowIcon.classList.toggle("bx-chevron-up");
+  //   filterList.classList.toggle("hidden");
+  filterList.classList.toggle("pointer-events-none");
+  filterList.classList.toggle("opacity-0");
+});
+
+for (let i = 0; i < filterItem.length; i++) {
+  filterItem[i].addEventListener("click", function () {
+    filterBtnTitle.textContent = filterItemTitle[i].textContent;
+  });
+}

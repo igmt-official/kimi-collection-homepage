@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="text-zinc-900">
+<html lang="en" class="text-zinc-900 bg-zinc-50">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -51,15 +51,15 @@
         </div> -->
 
         <div
-          class="nav-extra absolute w-9 h-9 bg-kimi-primary left-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-bl-full"
+          class="nav-extra absolute w-9 h-9 bg-kimi-primary left-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-zinc-50 before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-bl-full"
         ></div>
 
         <div
-          class="nav-extra absolute w-9 h-9 bg-kimi-primary right-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-br-full"
+          class="nav-extra absolute w-9 h-9 bg-kimi-primary right-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-zinc-50 before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-br-full"
         ></div>
 
         <ul
-          class="flex justify-between items-center py-3 px-12 text-zinc-50 bg-kimi-primary"
+          class="flex justify-between items-center py-3 px-16 text-zinc-50 bg-kimi-primary"
         >
           <li>
             <a
@@ -119,14 +119,215 @@
             <img
               class="w-[70%] object-cover self-start"
               src="assets/kimi/Aesthetic.png"
+              alt="Aesthetic Kim Picture"
             />
           </div>
         </section>
       </article>
 
-      <article class="nav-page transition-opacity animate-fade hidden p-4">
+      <article class="nav-page hidden p-6">
         <section>
-          <h1>COLLECTION</h1>
+          <div class="grid grid-cols-1 gap-6 pb-24">
+            <!-- ! PRODUCT FILTER BUTTON MOBILE -->
+            <button
+              class="filter-btn-mbl bg-zinc-50 relative p-4 rounded-xl shadow-lg flex items-center justify-between"
+            >
+              <span class="filter-btn-title">All</span>
+              <i class="bx bx-chevron-down"></i>
+
+              <ul
+                class="filter-list p-4 absolute bg-zinc-50 top-16 left-0 right-0 shadow-lg rounded-xl text-left grid grid-cols-1 gap-4 transition-opacity pointer-events-none opacity-0"
+              >
+                <li>
+                  <div
+                    class="filter-item transition-colors hover:text-kimi-primary"
+                  >
+                    <span class="filter-item-title">All</span>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="filter-item transition-colors hover:text-kimi-primary"
+                  >
+                    <span class="filter-item-title">Matte Lip Stain</span>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="filter-item transition-colors hover:text-kimi-primary"
+                  >
+                    <span class="filter-item-title">Gel Tint</span>
+                  </div>
+                </li>
+              </ul>
+            </button>
+
+            <!-- !PRODUCT LIST -->
+            <div class="grid grid-cols-1">
+              <ul class="product-list grid grid-cols-1 gap-2">
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/bethany-min.png"
+                      alt="Bethany"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Bethany</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/calah-min.png"
+                      alt="Calah"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Calah</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/delilah-min.png"
+                      alt="Delilah"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Delilah</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/diana-min.png"
+                      alt="Diana"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Diana</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/elizabeth-min.png"
+                      alt="Elizabeth"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Elizabeth</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/esther-min.png"
+                      alt="Esther"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Esther</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/hannah-min.png"
+                      alt="Hannah"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Hannah</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/meriam-min.png"
+                      alt="Meriam"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Meriam</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/naomi-min.png"
+                      alt="Naomi"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Naomi</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="bg-zinc-50 p-4 rounded-xl shadow-md flex items-center gap-6"
+                  >
+                    <img
+                      class="object-cover w-[3rem] rounded-full"
+                      src="/src/assets/products/rhoda-min.png"
+                      alt="Rhoda"
+                    />
+
+                    <div class="grid grid-cols-1">
+                      <span class="text-lg">Rhoda</span>
+                      <span class="text-xs text-zinc-400">Matte Lip Stain</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </article>
 
