@@ -18,7 +18,9 @@
   </head>
   <body>
     <header class="">
-      <nav class="fixed bottom-0 right-0 left-0 text-zinc-50 bg-kimi-primary">
+      <nav
+        class="fixed bottom-0 right-0 left-0 h-16 grid grid-cols-1 items-center justify-items-center px-14 text-zinc-50 bg-kimi-primary"
+      >
         <span class="text-xl hidden">Kimi Collection</span>
 
         <!-- <svg
@@ -50,15 +52,16 @@
           </ul>
         </div> -->
 
-        <div
+        <!-- !Navigation Extra Style -->
+        <!-- <div
           class="nav-extra absolute w-9 h-9 bg-kimi-primary left-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-zinc-50 before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-bl-full"
-        ></div>
+        ></div> -->
 
-        <div
+        <!-- <div
           class="nav-extra absolute w-9 h-9 bg-kimi-primary right-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-zinc-50 before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-br-full"
-        ></div>
+        ></div> -->
 
-        <ul class="flex justify-between items-center py-3 px-16">
+        <ul class="flex justify-between items-center w-full">
           <li>
             <a
               class="nav-link hover:text-kimi-secondary transition-colors py-3 px-5 bg-zinc-800 flex justify-center items-center gap-2 rounded-full"
@@ -105,7 +108,7 @@
     </header>
     <main>
       <article class="nav-page transition-opacity animate-fade">
-        <section>
+        <section class="">
           <div
             class="grid grid-cols-1 justify-items-center items-center h-full min-h-screen"
           >
@@ -123,9 +126,9 @@
         </section>
       </article>
 
-      <article class="nav-page hidden p-6">
-        <section>
-          <div class="grid grid-cols-1 gap-6 pb-24">
+      <article class="nav-page hidden">
+        <section class="px-6 pt-6 pb-[88px]">
+          <div class="grid grid-cols-1 gap-6">
             <!-- ! PRODUCT FILTER BUTTON MOBILE -->
             <button
               class="filter-btn-mbl bg-zinc-50 relative p-4 rounded-xl shadow-lg flex items-center justify-between"
