@@ -18,8 +18,8 @@
   </head>
   <body>
     <header class="">
-      <nav class="flex justify-between p-4">
-        <span class="text-xl">Kimi Collection</span>
+      <nav class="fixed bottom-0 right-0 left-0">
+        <span class="text-xl hidden">Kimi Collection</span>
 
         <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -50,67 +50,77 @@
           </ul>
         </div> -->
 
-        <div class="fixed bottom-0 right-0 left-0">
-          <div
-            class="nav-extra absolute w-9 h-9 bg-kimi-primary left-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-bl-full"
-          ></div>
+        <div
+          class="nav-extra absolute w-9 h-9 bg-kimi-primary left-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-bl-full"
+        ></div>
 
-          <div
-            class="nav-extra absolute w-9 h-9 bg-kimi-primary right-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-br-full"
-          ></div>
+        <div
+          class="nav-extra absolute w-9 h-9 bg-kimi-primary right-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-br-full"
+        ></div>
 
-          <ul
-            class="flex justify-between items-center py-3 px-12 text-zinc-50 bg-kimi-primary"
-          >
-            <li>
-              <a
-                class="nav-link hover:text-kimi-secondary transition-colors py-3 px-5 bg-zinc-800 flex justify-center items-center gap-2 rounded-full"
-                href="#"
+        <ul
+          class="flex justify-between items-center py-3 px-12 text-zinc-50 bg-kimi-primary"
+        >
+          <li>
+            <a
+              class="nav-link hover:text-kimi-secondary transition-colors py-3 px-5 bg-zinc-800 flex justify-center items-center gap-2 rounded-full"
+              href="#"
+            >
+              <i class="bx bx-home-alt-2 text-lg"></i>
+              <span
+                class="nav-text transition-opacity duration-300 animate-fade text-sm"
+                >Home</span
               >
-                <i class="bx bx-home-alt-2 text-lg"></i>
-                <span
-                  class="nav-text transition-opacity duration-300 animate-fade text-sm"
-                  >Home</span
-                >
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link hover:text-kimi-secondary transition-colors"
-                href="#"
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav-link hover:text-kimi-secondary transition-colors"
+              href="#"
+            >
+              <i class="bx bx-collection text-xl"></i>
+              <span
+                class="nav-text transition-opacity duration-300 animate-fade hidden text-sm"
+                >Collection</span
               >
-                <i class="bx bx-collection text-xl"></i>
-                <span
-                  class="nav-text transition-opacity duration-300 animate-fade hidden text-sm"
-                  >Collection</span
-                >
-              </a>
-            </li>
-            <!-- <ul class="mb-2">
+            </a>
+          </li>
+          <!-- <ul class="mb-2">
                   <li class="text-sm">Lipstick</li>
                   <li class="text-sm">Liptint</li>
                   <li class="text-sm">Makeup</li>
                 </ul> -->
-            <li>
-              <a
-                class="nav-link hover:text-kimi-secondary transition-colors"
-                href="#"
+          <li>
+            <a
+              class="nav-link hover:text-kimi-secondary transition-colors"
+              href="#"
+            >
+              <i class="bx bx-user text-xl"></i>
+              <span
+                class="nav-text transition-opacity duration-300 animate-fade hidden text-sm"
+                >Contact</span
               >
-                <i class="bx bx-user text-xl"></i>
-                <span
-                  class="nav-text transition-opacity duration-300 animate-fade hidden text-sm"
-                  >Contact</span
-                >
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <article class="nav-page transition-opacity animate-fade p-4">
+      <article class="nav-page transition-opacity animate-fade">
         <section>
-          <h1>HOME</h1>
+          <div
+            class="grid grid-cols-1 justify-items-center items-center h-full min-h-screen"
+          >
+            <p class="text-center font-kimi-serif text-5xl">
+              Bring the <br />
+              Aesthetic <br />
+              in You
+            </p>
+            <img
+              class="w-[70%] object-cover self-start"
+              src="assets/kimi/Aesthetic.png"
+            />
+          </div>
         </section>
       </article>
 

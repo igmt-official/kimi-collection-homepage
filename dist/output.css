@@ -564,6 +564,11 @@ video {
   top: -80%;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -574,6 +579,10 @@ video {
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -592,6 +601,26 @@ video {
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
+.h-\[60px\]{
+  height: 60px;
+}
+
+.min-h-full{
+  min-height: 100%;
+}
+
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-6{
   width: 1.5rem;
 }
@@ -602,6 +631,22 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-\[70\%\]{
+  width: 70%;
+}
+
+.w-\[80\%\]{
+  width: 80%;
+}
+
+.w-\[60\%\]{
+  width: 60%;
 }
 
 .translate-x-96{
@@ -639,6 +684,10 @@ video {
           animation: fade 0.5s ease backwards;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .items-center{
   align-items: center;
 }
@@ -651,6 +700,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-center{
+  justify-items: center;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -661,6 +714,22 @@ video {
 
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
+}
+
+.gap-12{
+  gap: 3rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.self-start{
+  align-self: flex-start;
 }
 
 .rounded-full{
@@ -695,6 +764,11 @@ video {
 .bg-zinc-800{
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-4{
@@ -750,6 +824,48 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-\[60px\]{
+  padding-bottom: 60px;
+}
+
+.pb-14{
+  padding-bottom: 3.5rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pb-\[120\]{
+  padding-bottom: 120;
+}
+
+.pb-\[120px\]{
+  padding-bottom: 120px;
+}
+
+.pb-40{
+  padding-bottom: 10rem;
+}
+
+.pb-32{
+  padding-bottom: 8rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .font-kimi-serif{
   font-family: Oranienbaum, serif;
 }
@@ -772,6 +888,11 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-zinc-900{
@@ -894,6 +1015,21 @@ video {
   top: -59%;
 }
 
+.before\:-top-\[40\%\]::before{
+  content: var(--tw-content);
+  top: -40%;
+}
+
+.before\:-top-\[85\%\]::before{
+  content: var(--tw-content);
+  top: -85%;
+}
+
+.before\:-top-\[58\%\]::before{
+  content: var(--tw-content);
+  top: -58%;
+}
+
 .before\:h-9::before{
   content: var(--tw-content);
   height: 2.25rem;
@@ -930,6 +1066,12 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.before\:bg-black::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .hover\:text-kimi-secondary:hover{
