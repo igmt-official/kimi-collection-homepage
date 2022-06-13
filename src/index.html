@@ -8,6 +8,7 @@
     <meta name="description" content="" />
     <link rel="icon" href="/favicon.ico" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="css/main.css" rel="stylesheet" /> -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
@@ -18,7 +19,7 @@
   <body>
     <header class="">
       <nav class="flex justify-between p-4">
-        <span class="font-kimi-serif text-xl">Kimi Collection</span>
+        <span class="text-xl">Kimi Collection</span>
 
         <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,22 +52,26 @@
 
         <div class="fixed bottom-0 right-0 left-0">
           <div
-            class="absolute w-9 h-9 bg-kimi-primary left-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[75%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-bl-full"
+            class="nav-extra absolute w-9 h-9 bg-kimi-primary left-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-bl-full"
           ></div>
 
           <div
-            class="absolute w-9 h-9 bg-kimi-primary right-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[75%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-br-full"
+            class="nav-extra absolute w-9 h-9 bg-kimi-primary right-0 -top-[75%] translate-y-1/2 before:h-9 before:w-9 before:bg-white before:absolute before:-top-[59%] before:translate-y-1/2 before:-right-1/2 before:-translate-x-1/2 before:rounded-br-full"
           ></div>
 
           <ul
-            class="flex justify-between items-center py-4 px-16 text-zinc-50 bg-kimi-primary"
+            class="flex justify-between items-center py-3 px-12 text-zinc-50 bg-kimi-primary"
           >
             <li>
               <a
-                class="nav-link hover:text-kimi-secondary transition-colors"
+                class="nav-link hover:text-kimi-secondary transition-colors py-3 px-4 bg-zinc-800 flex justify-between items-center gap-2 rounded-full"
                 href="#"
               >
-                <i class="bx bx-home-alt-2 text-2xl"></i>
+                <i class="bx bx-home-alt-2 text-lg"></i>
+                <span
+                  class="nav-text transition-opacity duration-300 animate-fade text-sm"
+                  >Home</span
+                >
               </a>
             </li>
             <li>
@@ -74,7 +79,11 @@
                 class="nav-link hover:text-kimi-secondary transition-colors"
                 href="#"
               >
-                <i class="bx bx-collection text-2xl"></i>
+                <i class="bx bx-collection text-xl"></i>
+                <span
+                  class="nav-text transition-opacity duration-300 animate-fade hidden text-sm"
+                  >Collection</span
+                >
               </a>
             </li>
             <!-- <ul class="mb-2">
@@ -87,7 +96,11 @@
                 class="nav-link hover:text-kimi-secondary transition-colors"
                 href="#"
               >
-                <i class="bx bx-user text-2xl"></i>
+                <i class="bx bx-user text-xl"></i>
+                <span
+                  class="nav-text transition-opacity duration-300 animate-fade hidden text-sm"
+                  >Contact</span
+                >
               </a>
             </li>
           </ul>
@@ -95,9 +108,21 @@
       </nav>
     </header>
     <main>
-      <article class="nav-page p-4">
+      <article class="nav-page transition-opacity animate-fade p-4">
         <section>
           <h1>HOME</h1>
+        </section>
+      </article>
+
+      <article class="nav-page transition-opacity animate-fade hidden p-4">
+        <section>
+          <h1>COLLECTION</h1>
+        </section>
+      </article>
+
+      <article class="nav-page transition-opacity animate-fade hidden p-4">
+        <section>
+          <h1>CONTACT</h1>
         </section>
       </article>
     </main>
