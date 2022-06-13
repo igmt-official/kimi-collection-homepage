@@ -73,6 +73,7 @@ const filterArrowIcon = document.querySelector(".bx-chevron-down");
 const filterList = document.querySelector(".filter-list");
 const filterItem = document.querySelectorAll(".filter-item");
 const filterItemTitle = document.querySelectorAll(".filter-item-title");
+const categoryProducts = document.querySelectorAll(".product-list");
 
 const toggleNav = function () {
   filterArrowIcon.classList.toggle("bx-chevron-up");
@@ -81,11 +82,26 @@ const toggleNav = function () {
   filterList.classList.toggle("opacity-0");
 };
 
+const categoryDisplay = function () {
+  for (let i = 0; i < categoryProducts.length; i++) {
+    if (filterBtnTitle.textContent === "All") {
+      categoryProducts[i].classList.remove("hidden");
+    } else if (
+      filterBtnTitle.textContent === categoryProducts[i].dataset.category
+    ) {
+      categoryProducts[i].classList.remove("hidden");
+    } else {
+      categoryProducts[i].classList.add("hidden");
+    }
+  }
+};
+
 filterBtnMbl.addEventListener("click", toggleNav);
 
 for (let i = 0; i < filterItem.length; i++) {
   filterItem[i].addEventListener("click", function () {
     filterBtnTitle.textContent = filterItemTitle[i].textContent;
     toggleNav();
+    categoryDisplay();
   });
 }
