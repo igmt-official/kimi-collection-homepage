@@ -564,6 +564,38 @@ video {
   top: 4rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.left-6{
+  left: 1.5rem;
+}
+
+.right-6{
+  right: 1.5rem;
+}
+
+.top-24{
+  top: 6rem;
+}
+
+.top-\[88px\]{
+  top: 88px;
+}
+
+.top-\[90px\]{
+  top: 90px;
+}
+
+.top-\[92px\]{
+  top: 92px;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
