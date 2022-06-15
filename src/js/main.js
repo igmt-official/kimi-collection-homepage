@@ -67,41 +67,65 @@ for (let i = 0; i < navLink.length; i++) {
 }
 
 // !PRODUCTS FILTER BUTTON MOBILE
-const filterBtnMbl = document.querySelector(".filter-btn-mbl");
-const filterBtnTitle = document.querySelector(".filter-btn-title");
-const filterArrowIcon = document.querySelector(".bx-chevron-down");
-const filterList = document.querySelector(".filter-list");
-const filterItem = document.querySelectorAll(".filter-item");
+// const filterBtnMbl = document.querySelector(".filter-btn-mbl");
+// const filterBtnTitle = document.querySelector(".filter-btn-title");
+// const filterArrowIcon = document.querySelector(".bx-chevron-down");
+// const filterList = document.querySelector(".filter-list");
+const filterBtn = document.querySelectorAll(".filter-btn");
 const filterItemTitle = document.querySelectorAll(".filter-item-title");
 const categoryProducts = document.querySelectorAll(".product-list");
 
-const toggleNav = function () {
-  filterArrowIcon.classList.toggle("bx-chevron-up");
-  //   filterList.classList.toggle("hidden");
-  filterList.classList.toggle("pointer-events-none");
-  filterList.classList.toggle("opacity-0");
-};
-
-const categoryDisplay = function () {
-  for (let i = 0; i < categoryProducts.length; i++) {
-    if (filterBtnTitle.textContent === "All") {
-      categoryProducts[i].classList.remove("hidden");
-    } else if (
-      filterBtnTitle.textContent === categoryProducts[i].dataset.category
-    ) {
-      categoryProducts[i].classList.remove("hidden");
-    } else {
-      categoryProducts[i].classList.add("hidden");
-    }
+const categoryDisplay = function (category) {
+  console.log(category);
+  if (category === "All") {
+    console.log("Good");
   }
 };
 
-filterBtnMbl.addEventListener("click", toggleNav);
+for (let i = 0; i < filterBtn.length; i++) {
+  filterBtn[i].addEventListener("click", function () {
+    // Toggle Filter Button
+    for (let i = 0; i < filterBtn.length; i++) {
+      filterBtn[i].classList.remove("bg-zinc-800");
+      filterBtn[i].classList.remove("text-zinc-50");
+    }
 
-for (let i = 0; i < filterItem.length; i++) {
-  filterItem[i].addEventListener("click", function () {
-    filterBtnTitle.textContent = filterItemTitle[i].textContent;
-    toggleNav();
-    categoryDisplay();
+    filterBtn[i].classList.add("bg-zinc-800");
+    filterBtn[i].classList.add("text-zinc-50");
+
+    let filter = filterBtn[i].textContent;
+    // console.log(filter);
+
+    categoryDisplay(filter);
   });
 }
+// const toggleNav = function () {
+//   filterArrowIcon.classList.toggle("bx-chevron-up");
+//   //   filterList.classList.toggle("hidden");
+//   filterList.classList.toggle("pointer-events-none");
+//   filterList.classList.toggle("opacity-0");
+// };
+
+// const categoryDisplay = function () {
+//   for (let i = 0; i < categoryProducts.length; i++) {
+//     if (filterBtnTitle.textContent === "All") {
+//       categoryProducts[i].classList.remove("hidden");
+//     } else if (
+//       filterBtnTitle.textContent === categoryProducts[i].dataset.category
+//     ) {
+//       categoryProducts[i].classList.remove("hidden");
+//     } else {
+//       categoryProducts[i].classList.add("hidden");
+//     }
+//   }
+// };
+
+// filterBtnMbl.addEventListener("click", toggleNav);
+
+// for (let i = 0; i < filterItem.length; i++) {
+//   filterItem[i].addEventListener("click", function () {
+//     filterBtnTitle.textContent = filterItemTitle[i].textContent;
+//     toggleNav();
+//     categoryDisplay();
+//   });
+// }
