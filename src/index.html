@@ -126,35 +126,30 @@
         <section class="px-6 pt-6 pb-[88px]">
           <div class="grid grid-cols-1 gap-6">
             <!-- !PRODUCT FILTER BUTTON MOBILE -->
-            <button
+            <!-- <button
               class="filter-btn-mbl bg-white relative p-4 rounded-xl shadow-lg flex items-center justify-between"
             >
               <span class="filter-btn-title">Select Category</span>
               <i class="bx bx-chevron-down"></i>
-            </button>
+            </button> -->
 
             <!-- !PRODUCT FILTER BUTTON LIST -->
-            <ul
-              class="filter-list p-4 absolute bg-white top-[92px] left-6 right-6 shadow-lg rounded-xl text-left grid grid-cols-1 gap-4 transition-opacity pointer-events-none opacity-0"
-            >
-              <li>
+            <!-- <ul class="filter-list p-4 absolute bg-white top-[92px] left-6 right-6 shadow-lg rounded-xl text-left grid grid-cols-1 gap-4 transition-opacity pointer-events-none opacity-0"></ul> -->
+            <ul class="flex items-center gap-4 text-zinc-900">
+              <li class="rounded-full bg-white overflow-hidden">
                 <div
-                  class="filter-item transition-colors hover:text-kimi-primary"
+                  class="filter-btn w-full px-6 py-3 bg-zinc-800 text-zinc-50"
                 >
                   <span class="filter-item-title">All</span>
                 </div>
               </li>
-              <li>
-                <div
-                  class="filter-item transition-colors hover:text-kimi-primary"
-                >
-                  <span class="filter-item-title">Matte Lip Stain</span>
+              <li class="rounded-full bg-white overflow-hidden">
+                <div class="filter-btn w-full px-6 py-3">
+                  <span class="filter-item-title">Matte Lip</span>
                 </div>
               </li>
-              <li>
-                <div
-                  class="filter-item transition-colors hover:text-kimi-primary"
-                >
+              <li class="rounded-full bg-white overflow-hidden">
+                <div class="filter-btn w-full px-6 py-3">
                   <span class="filter-item-title">Gel Tint</span>
                 </div>
               </li>
@@ -164,7 +159,7 @@
             <div class="grid grid-cols-1 gap-2">
               <!-- !Matte Lip Stain -->
               <ul
-                class="product-list grid grid-cols-1 gap-2"
+                class="product-list grid grid-cols-1 gap-3"
                 data-category="Matte Lip Stain"
               >
                 <li>
@@ -311,7 +306,7 @@
 
               <!-- !Gel Tint -->
               <ul
-                class="product-list grid grid-cols-1 gap-2"
+                class="product-list grid grid-cols-1 gap-3"
                 data-category="Gel Tint"
               >
                 <li>
