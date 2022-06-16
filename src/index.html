@@ -135,21 +135,22 @@
 
             <!-- !PRODUCT FILTER BUTTON LIST -->
             <!-- <ul class="filter-list p-4 absolute bg-white top-[92px] left-6 right-6 shadow-lg rounded-xl text-left grid grid-cols-1 gap-4 transition-opacity pointer-events-none opacity-0"></ul> -->
-            <ul class="flex items-center gap-4 text-zinc-900">
+            <ul class="flex items-center gap-4 text-zinc-900 flex-wrap">
               <li class="rounded-full bg-white overflow-hidden">
                 <button
                   class="filter-btn w-full px-6 py-3 bg-zinc-800 text-zinc-50"
+                  data-filter="All"
                 >
                   <span class="filter-item-title">All</span>
                 </button>
               </li>
               <li class="rounded-full bg-white overflow-hidden">
-                <button class="filter-btn w-full px-6 py-3">
+                <button class="filter-btn w-full px-6 py-3" data-filter="Matte">
                   <span class="filter-item-title">Matte Lip</span>
                 </button>
               </li>
               <li class="rounded-full bg-white overflow-hidden">
-                <button class="filter-btn w-full px-6 py-3">
+                <button class="filter-btn w-full px-6 py-3" data-filter="Gel">
                   <span class="filter-item-title">Gel Tint</span>
                 </button>
               </li>
@@ -160,7 +161,7 @@
               <!-- !Matte Lip Stain -->
               <ul
                 class="product-list grid grid-cols-1 gap-3"
-                data-category="Matte Lip Stain"
+                data-category="Matte"
               >
                 <li>
                   <div class="bg-white p-4 rounded-xl flex items-center gap-6">
@@ -307,7 +308,7 @@
               <!-- !Gel Tint -->
               <ul
                 class="product-list grid grid-cols-1 gap-3"
-                data-category="Gel Tint"
+                data-category="Gel"
               >
                 <li>
                   <div class="bg-white p-4 rounded-xl flex items-center gap-6">

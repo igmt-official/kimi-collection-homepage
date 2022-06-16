@@ -49,15 +49,37 @@ const filterBtn = document.querySelectorAll(".filter-btn");
 const categoryProducts = document.querySelectorAll(".product-list");
 
 const toggleFilter = function (selectedFilter) {
-  console.log(selectedFilter);
+  for (let i = 0; i < filterBtn.length; i++) {
+    filterBtn[i].classList.remove("bg-zinc-800");
+    filterBtn[i].classList.remove("text-zinc-50");
+  }
+
+  filterBtn[selectedFilter].classList.add("bg-zinc-800");
+  filterBtn[selectedFilter].classList.add("text-zinc-50");
+};
+
+const filterCategory = function (filtered) {
+  for (let i = 0; i < categoryProducts.length; i++) {
+    if (filtered == "All") {
+      categoryProducts[i].classList.remove("hidden");
+    } else if (filtered == categoryProducts[i].getAttribute("data-category")) {
+      categoryProducts[i].classList.remove("hidden");
+    } else {
+      categoryProducts[i].classList.add("hidden");
+    }
+  }
 };
 
 for (let i = 0; i < filterBtn.length; i++) {
   filterBtn[i].addEventListener("click", function () {
-    filterBtn[0].classList.remove("bg-zinc-800");
-    filterBtn[0].classList.remove("text-zinc-50");
+    // filterBtn[0].classList.remove("bg-zinc-800");
+    // filterBtn[0].classList.remove("text-zinc-50");
 
-    filterBtn[i].classList.toggle("bg-zinc-800");
-    filterBtn[i].classList.toggle("text-zinc-50");
+    // filterBtn[i].classList.toggle("bg-zinc-800");
+    // filterBtn[i].classList.toggle("text-zinc-50");
+    toggleFilter(i);
+
+    let filter = filterBtn[i].getAttribute("data-filter");
+    filterCategory(filter);
   });
 }
