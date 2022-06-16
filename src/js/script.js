@@ -56,13 +56,15 @@ const toggleFilter = function (selectedFilter) {
 
   filterBtn[selectedFilter].classList.add("bg-zinc-800");
   filterBtn[selectedFilter].classList.add("text-zinc-50");
+
+  let filter = filterBtn[selectedFilter].getAttribute("data-filter");
 };
 
 const filterCategory = function (filtered) {
   for (let i = 0; i < categoryProducts.length; i++) {
-    if (filtered == "All") {
+    if (filtered === "All") {
       categoryProducts[i].classList.remove("hidden");
-    } else if (filtered == categoryProducts[i].getAttribute("data-category")) {
+    } else if (filtered === categoryProducts[i].getAttribute("data-category")) {
       categoryProducts[i].classList.remove("hidden");
     } else {
       categoryProducts[i].classList.add("hidden");
@@ -72,11 +74,6 @@ const filterCategory = function (filtered) {
 
 for (let i = 0; i < filterBtn.length; i++) {
   filterBtn[i].addEventListener("click", function () {
-    // filterBtn[0].classList.remove("bg-zinc-800");
-    // filterBtn[0].classList.remove("text-zinc-50");
-
-    // filterBtn[i].classList.toggle("bg-zinc-800");
-    // filterBtn[i].classList.toggle("text-zinc-50");
     toggleFilter(i);
 
     let filter = filterBtn[i].getAttribute("data-filter");
