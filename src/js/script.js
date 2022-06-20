@@ -44,6 +44,35 @@ for (let i = 0; i < navLink.length; i++) {
   });
 }
 
+// !Hero Pagination
+const heroTab = document.querySelectorAll(".hero-tab");
+const heroText = document.querySelectorAll(".hero-text");
+const heroImg = document.querySelectorAll(".hero-img");
+
+const heroPagination = function (selectedPage) {
+  for (let i = 0; i < heroTab.length; i++) {
+    heroTab[i].classList.remove("bg-zinc-800");
+    heroTab[i].classList.add("bg-white");
+
+    heroText[i].classList.add("hidden");
+
+    heroImg[i].classList.add("hidden");
+  }
+
+  heroTab[selectedPage].classList.remove("bg-white");
+  heroTab[selectedPage].classList.add("bg-zinc-800");
+
+  heroText[selectedPage].classList.remove("hidden");
+
+  heroImg[selectedPage].classList.remove("hidden");
+};
+
+for (let i = 0; i < heroTab.length; i++) {
+  heroTab[i].addEventListener("click", function () {
+    heroPagination(i);
+  });
+}
+
 // !Filter Category Products
 const filterBtn = document.querySelectorAll(".filter-btn");
 const categoryProducts = document.querySelectorAll(".product-list");
@@ -56,8 +85,6 @@ const toggleFilter = function (selectedFilter) {
 
   filterBtn[selectedFilter].classList.add("bg-zinc-800");
   filterBtn[selectedFilter].classList.add("text-zinc-50");
-
-  let filter = filterBtn[selectedFilter].getAttribute("data-filter");
 };
 
 const filterCategory = function (filtered) {
